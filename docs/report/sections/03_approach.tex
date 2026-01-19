@@ -1,0 +1,14 @@
+\chapter{Approach}
+
+The inlet design problem is approached using one-dimensional compressible flow theory and classical shock relations. For a supersonic inlet employing multiple oblique shocks followed by a normal shock, total pressure losses arise from irreversible entropy increases across each shock. Oswatitsch demonstrated that, for a given number of shocks and flight Mach number, the total pressure recovery is maximized when all oblique shocks are of equal strength \cite{oswatitsch1947}.
+
+Equal shock strength is achieved when the Mach number normal to each oblique shock is constant throughout the inlet:
+\begin{equation}
+M_1 \sin \beta_1 = M_2 \sin \beta_2 = \cdots = M_{n-1} \sin \beta_{n-1}
+\end{equation}
+
+where \( M_i \) is the upstream Mach number of the \(i\)-th oblique shock and \( \beta_i \) is the corresponding shock angle.
+
+For each oblique shock, the flow deflection angle \( \theta_i \) and downstream Mach number are obtained from the standard oblique shock relations. The stagnation pressure loss across each oblique shock is calculated using the equivalent normal shock relation based on the normal Mach number component. The final normal shock is designed such that the upstream Mach number immediately before the shock is 1.3, as specified in the project requirements.
+
+The system of equations is solved numerically using a root-finding approach. A single unknown parameter—the common normal Mach number for all oblique shocks—is iteratively adjusted until the Mach number upstream of the terminal normal shock matches the specified value. This approach ensures numerical robustness while strictly enforcing the Oswatitsch condition.

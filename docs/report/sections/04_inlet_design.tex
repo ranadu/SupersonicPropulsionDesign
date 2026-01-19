@@ -1,0 +1,68 @@
+\chapter{Supersonic Inlet Design}
+
+\section{Design Inputs}
+
+The inlet is designed for the following flight and design conditions:
+
+\begin{itemize}
+    \item Freestream Mach number: \( M_1 = 3.2 \)
+    \item Ratio of specific heats: \( \gamma = 1.4 \)
+    \item Number of oblique shocks: 3
+    \item Upstream Mach number before terminal normal shock: \( M_n = 1.3 \)
+\end{itemize}
+
+\section{Oblique Shock Solution}
+
+Application of the Oswatitsch equal-strength condition resulted in a common normal Mach number across all oblique shocks of:
+\[
+M_n^* = 1.493
+\]
+
+The resulting shock angles, flow deflection angles, and Mach number progression through the inlet are summarized in Table~\ref{tab:oblique_results}.
+
+\begin{table}[h]
+\centering
+\caption{Oblique shock properties for Oswatitsch-optimized inlet}
+\label{tab:oblique_results}
+\begin{tabular}{c c c c c}
+\hline
+Shock & $M_i$ & $\beta_i$ (deg) & $\theta_i$ (deg) & $M_{i+1}$ \\
+\hline
+1 & 3.200 & 27.82 & 11.90 & 2.566 \\
+2 & 2.566 & 35.60 & 14.45 & 1.950 \\
+3 & 1.950 & 49.98 & 17.22 & 1.300 \\
+\hline
+\end{tabular}
+\end{table}
+
+The results show a smooth and monotonic reduction in Mach number through the oblique shock system, while maintaining supersonic flow prior to the terminal normal shock.
+
+\section{Pressure Recovery}
+
+The stagnation pressure ratio across each oblique shock was found to be identical, consistent with the equal-strength shock condition:
+\[
+\pi_1 = \pi_2 = \pi_3 = 0.9319
+\]
+
+The stagnation pressure ratio across the terminal normal shock was computed as:
+\[
+\pi_4 = 0.9794
+\]
+
+The total inlet pressure recovery is therefore:
+\[
+\pi_d = \prod_{i=1}^{4} \pi_i = 0.7926
+\]
+
+This value is consistent with expected pressure recovery levels for Mach 3+ external-compression inlets and confirms the effectiveness of the Oswatitsch-optimized shock system.
+
+\section{Inlet Geometry}
+
+A two-dimensional ramp inlet geometry corresponding to the calculated deflection angles was generated to provide a visual representation of the inlet configuration. The inlet consists of three successive compression ramps producing the required flow turning prior to the terminal normal shock. A schematic of the inlet geometry is shown in Figure~\ref{fig:inlet_geometry}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/inlet_geometry.png}
+\caption{Three-ramp supersonic inlet geometry based on Oswatitsch-optimized deflection angles}
+\label{fig:inlet_geometry}
+\end{figure}

@@ -1,0 +1,30 @@
+\documentclass[12pt]{report}
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Preliminary Design and Trade Study of Supersonic Propulsion Systems}
+\author{Robert Anadu}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\input{sections/02_problem}
+\input{sections/03_approach}
+\input{sections/04_inlet_design}
+\input{sections/05_cycle_analysis}
+\input{sections/06_trade_study}
+\input{sections/07_conclusions}
+
+\bibliographystyle{ieeetr}
+\bibliography{refs}
+
+\appendix
+\input{appendix/code}
+
+\end{document}
