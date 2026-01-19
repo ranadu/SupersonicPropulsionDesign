@@ -39,7 +39,7 @@ if ~exist('results','dir'); mkdir('results'); end
 save('results/cycle_parametric_results.mat','fc','p','pi_c_vec','Tt4_vec','res');
 
 % Print a “best” point by a simple objective (min TSFC with Fspec constraint) 
-Fmin = 600; % N/(kg/s) constraint
+Fmin = 250; % N/(kg/s) constraint
 mask = res.Fspec >= Fmin;
 TS = res.TSFC; TS(~mask) = NaN;
 

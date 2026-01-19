@@ -10,8 +10,14 @@ TSFC  = nan(nT, nP);
 for iT = 1:nT
     for iP = 1:nP
         out = cycle_analysis(fc, p, pi_c_vec(iP), Tt4_vec(iT));
-        Fspec(iT,iP) = out.Fspec;
-        TSFC(iT,iP)  = out.TSFC;
+
+Fspec(iT,iP) = out.Fspec;
+
+if isfinite(out.Fspec) && out.Fspec > 0
+    TSFC(iT,iP) = out.TSFC;
+else
+    TSFC(iT,iP) = NaN;   % mask non-physical / negative thrust regions
+end
     end
 end
 
