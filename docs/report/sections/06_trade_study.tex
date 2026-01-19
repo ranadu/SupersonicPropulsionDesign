@@ -33,3 +33,23 @@ When evaluated at the Mach 3.2 mission condition using the same cycle framework,
 The comparison highlights the critical role of turbine inlet temperature and inlet pressure recovery in enabling high-Mach-number cruise. While the Olympus 593 achieves acceptable performance at Mach 2 through a combination of moderate turbine temperature and afterburner-assisted operation, its lower $T_{t4}$ limits its ability to overcome ram drag at Mach 3.2.
 
 In contrast, the fictional engine is explicitly designed around the Mach 3.2 mission requirement, incorporating a higher allowable turbine inlet temperature and an optimized inlet to maintain sufficient total pressure at the engine face. These design choices enable sustained supersonic cruise at the cost of increased thermal loading and higher fuel consumption, illustrating the fundamental trade-offs inherent in high-speed propulsion system design.
+
+\section{Summary Comparison}
+
+\begin{table}[h]
+\centering
+\caption{Comparison of fictional engine and Olympus 593 at Mach 3.2}
+\label{tab:engine_comparison}
+\begin{tabular}{l c c}
+\toprule
+Parameter & Fictional Engine & Olympus 593 \\
+\midrule
+Design Mach number & 3.2 & 2.0 \\
+Compressor pressure ratio & 10.26 & 15.5 \\
+Turbine inlet temperature (K) & 2000 & 1355 \\
+Inlet pressure recovery & 0.793 & 0.793 \\
+Specific thrust & 390 N/(kg/s) & Not feasible \\
+TSFC & $4.04\times10^{-5}$ & Not feasible \\
+\bottomrule
+\end{tabular}
+\end{table}

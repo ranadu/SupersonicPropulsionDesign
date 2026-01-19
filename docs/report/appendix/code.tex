@@ -1,0 +1,22 @@
+\chapter{Design Code}
+
+All inlet design and cycle analysis calculations were performed using custom MATLAB scripts developed specifically for this project. The code is fully self-contained and may be executed by running the front-end scripts \texttt{run\_inlet\_design.m} and \texttt{run\_cycle\_analysis.m}. Supporting functions implement standard compressible flow relations and one-dimensional turbojet cycle equations.
+
+Representative excerpts are shown below for reference.
+
+\section{Inlet Design Solver}
+\begin{verbatim}
+oswatitsch_solver.m
+oblique_shock.m
+normal_shock.m
+\end{verbatim}
+
+\section{Cycle Analysis}
+\begin{verbatim}
+cycle_analysis.m
+parametric_study.m
+engine_params_baseline.m
+engine_params_olympus593.m
+\end{verbatim}
+
+The full codebase is available in the project submission directory.
