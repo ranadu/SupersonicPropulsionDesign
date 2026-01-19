@@ -1,0 +1,35 @@
+\chapter{Engine Trade Study}
+
+\section{Fictional Engine Design Point}
+
+Based on the parametric analysis, a feasible fictional engine design point was selected by imposing a minimum specific thrust requirement of 250 N/(kg/s) to ensure adequate propulsion capability at Mach 3.2. The resulting design point is summarized in Table~\ref{tab:fictional_engine}.
+
+\begin{table}[h]
+\centering
+\caption{Selected fictional engine design point at Mach 3.2}
+\label{tab:fictional_engine}
+\begin{tabular}{l c}
+\hline
+Parameter & Value \\
+\hline
+Compressor pressure ratio, $\pi_c$ & 10.26 \\
+Turbine inlet temperature, $T_{t4}$ & 2000 K \\
+Specific thrust & 390 N/(kg/s) \\
+TSFC & $4.04 \times 10^{-5}$ kg/(N$\cdot$s) \\
+\hline
+\end{tabular}
+\end{table}
+
+This design reflects the necessity of elevated turbine inlet temperature to achieve positive net thrust at high supersonic cruise conditions, while maintaining a moderate compressor pressure ratio to limit excessive compressor work.
+
+\section{Off-the-Shelf Engine Comparison}
+
+The Rolls-Royce/Snecma Olympus 593 engine, developed for the Concorde supersonic transport, was selected as an off-the-shelf benchmark for comparison. The Olympus 593 was designed for efficient cruise near Mach 2 and employed a higher compressor pressure ratio but significantly lower turbine inlet temperature relative to the fictional engine.
+
+When evaluated at the Mach 3.2 mission condition using the same cycle framework, the Olympus 593 baseline configuration did not produce positive net thrust within the steady one-dimensional turbojet model. This result indicates that the original Olympus 593 cycle, optimized for lower supersonic speeds, is not suitable for sustained Mach 3.2 cruise without substantial modification.
+
+\section{Discussion}
+
+The comparison highlights the critical role of turbine inlet temperature and inlet pressure recovery in enabling high-Mach-number cruise. While the Olympus 593 achieves acceptable performance at Mach 2 through a combination of moderate turbine temperature and afterburner-assisted operation, its lower $T_{t4}$ limits its ability to overcome ram drag at Mach 3.2.
+
+In contrast, the fictional engine is explicitly designed around the Mach 3.2 mission requirement, incorporating a higher allowable turbine inlet temperature and an optimized inlet to maintain sufficient total pressure at the engine face. These design choices enable sustained supersonic cruise at the cost of increased thermal loading and higher fuel consumption, illustrating the fundamental trade-offs inherent in high-speed propulsion system design.
